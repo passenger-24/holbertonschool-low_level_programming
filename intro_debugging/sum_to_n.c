@@ -8,13 +8,13 @@
  */
 int sum_to_n(int n)
 {
-	int i;
-	int sum = 0;
+        int i;
+        int sum = 0;
 
-	for (i = 1; i <= n; i++)
-		sum += 1;
+        for (i = 1; i <= n; i++)
+                sum += i;
 
-	return (sum);
+        return (sum);
 }
 
 /* -- DO NOT Modify the code below this line -- */
