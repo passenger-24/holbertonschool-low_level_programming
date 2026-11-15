@@ -22,7 +22,7 @@ int main(void)
 		{
 			printf("Bye!\n");
 		}
-		else if (Choice >= 1 && Choice <= 2)
+		else if (Choice >= 1 && Choice <= 3)
 		{
 			printf("A: ");
 			scanf("%d", &a);
@@ -39,9 +39,14 @@ int main(void)
 				result = a - b;
 				printf("Result: %d\n", result);
 			}
+			else if (Choice == 3)
+			{
+				result = a * b;
+				printf("Result: %d\n", result);
+			}
 		}
 
-		else if (Choice >= 3 && Choice <= 4)
+		else if (Choice == 4)
 		{
 			printf("Select...\n");
 		}
