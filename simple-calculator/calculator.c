@@ -3,9 +3,9 @@
 int main(void)
 {
 	int Choice = -1;
-	int a;
-	int b;
-	int result;
+	double a;
+	double b;
+	double result;
 
 	while (Choice != 0)
 	{
@@ -22,33 +22,40 @@ int main(void)
 		{
 			printf("Bye!\n");
 		}
-		else if (Choice >= 1 && Choice <= 3)
+		else if (Choice >= 1 && Choice <= 4)
 		{
 			printf("A: ");
-			scanf("%d", &a);
+			scanf("%lf", &a);
 			printf("B: ");
-			scanf("%d", &b);
+			scanf("%lf", &b);
 
 			if (Choice == 1)
 			{
 				result = a + b;
-				printf("Result: %d\n", result);
+				printf("Result: %g\n", result);
 			}
 			else if (Choice == 2)
 			{
 				result = a - b;
-				printf("Result: %d\n", result);
+				printf("Result: %g\n", result);
 			}
 			else if (Choice == 3)
 			{
 				result = a * b;
-				printf("Result: %d\n", result);
+				printf("Result: %g\n", result);
 			}
-		}
-
-		else if (Choice == 4)
-		{
-			printf("Select...\n");
+			else if (Choice == 4)
+			{
+				if (b == 0)
+				{
+					printf("Error: division by zero\n");
+				}
+				else
+				{
+					result = a / b;
+					printf("Result: %g\n", result);
+				}
+			}
 		}
 		else
 		{
