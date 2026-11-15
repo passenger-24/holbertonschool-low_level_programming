@@ -19,7 +19,14 @@ int main(void)
 		{
 			printf("Bye!\n");
 		}
+		else if (Choice >= 1 && Choice <= 4)
+		{
+			printf(" Select...\n");
+		}
+		else
+		{
+			printf("Invalid choice\n");
+		}
 	}
 	return (0);
 }
-
