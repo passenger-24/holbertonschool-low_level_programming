@@ -1,10 +1,19 @@
-#include <stdio.h>
-#include "dog.h"
+#ifndef DOG_H
+#define DOG_H
 
 /**
- * main - Entry point
+ * struct dog - description of a dog
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
  *
- * Return: void
  */
 
+struct dog
+{
+	char *name;
+	float age;
+	char *owner;
+};
 
+#endif
